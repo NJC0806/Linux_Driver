@@ -10,4 +10,4 @@
 #define DEVICE_NAME  "beep"
 #define BEEP_OFF 0x5
 #define BEEP_ON  0x6
-#endif 
+#endif  
