@@ -22,7 +22,7 @@ static int __init touchscreen_dev_init(void){
 	touchscreen_info.irq=gpio_to_irq(EXYNOS4_GPX1(6));
 	/*3、添加I2C设备*/
 	touchscreen_client=i2c_new_device(touchscreen_adp,&touchscreen_info);
-	if(touchscreen_client==NULL){
+	if(touchscreen_client==NULL){
 		printk("添加I2C设备失败\n");
 		return -EBUSY;
 	}
